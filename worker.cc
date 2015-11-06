@@ -9,7 +9,7 @@ int main()
 	cout << "Worker\n";
 	context ctx;
 	cout<<"Listening socket to tcp port 5557";
-	socket server_worker(ctx, socket_type::pull);  // recive server-worker  
+	socket server_worker(ctx, socket_type::pull);  // receive server-worker  
 	server_worker.connect("tcp://localhost:5557");
 	cout<<"Binding socket to tcp port 5558";
 	socket worker_recollector(ctx, socket_type::push);  // socket worker-recollector  
